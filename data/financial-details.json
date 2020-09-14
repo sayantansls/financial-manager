@@ -1,0 +1,77 @@
+{
+	"Fixed Deposit": [{
+			"Bank": "State Bank Of India",
+			"Account No": "123456",
+			"IFSC Code": "SBIN123",
+			"Start Date": "12-8-2020 00:00:00.00",
+			"End Date": "11-8-2022 00:00:00.00",
+			"Principal": 300000,
+			"Rate": 5.1,
+			"Time": 2,
+			"Payment Frequency": "One-time"
+		},
+		{
+			"Bank": "United Bank Of India",
+			"Account No": "456987",
+			"IFSC Code": "UBIN123",
+			"Start Date": "18-8-2020 00:00:00.00",
+			"End Date": "17-8-2022 00:00:00.00",
+			"Principal": 300000,
+			"Rate": 5.25,
+			"Time": 2,
+			"Payment Frequency": "One-time"
+		}
+	],
+
+	"Recurring Deposit": [
+		{
+			"Bank": "State Bank Of India",
+			"Account No": "5415877",
+			"IFSC Code": "SBIN54237",
+			"Start Date": "8-8-2019 00:00:00.00",
+			"End Date": "7-8-2020 00:00:00.00",
+			"Principal": 25000,
+			"Rate": 6.5,
+			"Time": 1,
+			"Payment Frequency": "Every Month"
+		},
+
+		{
+			"Bank": "United Bank Of India",
+			"Account No": "7848955",
+			"IFSC Code": "UBIN893784",
+			"Start Date": "16-8-2019 00:00:00.00",
+			"End Date": "15-8-2020 00:00:00.00",
+			"Principal": 25000,
+			"Rate": 5.75,
+			"Time": 1,
+			"Payment Frequency": "Every Month"
+		},
+
+		{
+			"Bank": "State Bank Of India",
+			"Account No": "1244557",
+			"IFSC Code": "SBIN89372",
+			"Start Date": "5-9-2019 00:00:00.00",
+			"End Date": "4-9-2020 00:00:00.00",
+			"Principal": 25000,
+			"Rate": 6.5,
+			"Time": 1,
+			"Payment Frequency": "Every Month"
+		},
+
+		{
+			"Bank": "United Bank Of India",
+			"Account No": "7849562",
+			"IFSC Code": "UBIN98237",
+			"Start Date": "10-9-2019 00:00:00.00",
+			"End Date": "9-9-2020 00:00:00.00",
+			"Principal": 25000,
+			"Rate": 5.75,
+			"Time": 1,
+			"Payment Frequency": "Every Month"
+		}
+	],
+
+	"Public Provident Fund" : {}
+}
