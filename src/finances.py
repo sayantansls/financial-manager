@@ -1,5 +1,6 @@
 """
 author : sayantan (sayantan.ghosh@strandls.com)
+Working on a dynamic financial manager web development project using Flask
 """
 
 import json, os, sys, enum
@@ -8,17 +9,20 @@ from pprint import pprint
 
 json_file = '../data/financial-details.json'
 prop_file = '../data/user-details.prop'
+messages = '../data/messages.json'
 current_datetime = datetime.now()
 
+def check_file_exists(filename):
+	if not os.path.exists(filename):
+		raise Exception(messages['error-messages']['FILE_NOT_PRESENT'].format(filename))
+
 def read_json(json_file):
-	if not os.path.exists(json_file):
-		raise Exception('Financial Details JSON file - {} not present'.format(json_file))
+	check_file_exists(json_file)
 	return json.load(open(json_file, 'r'))
 
 def read_properties(prop_file):
+	check_file_exists(prop_file)
 	prop_dict = dict()
-	if not os.path.exists(prop_file):
-		raise Exception('User Details file - {} not present'.format(prop_file))
 	for line in open(prop_file, 'r').readlines():
 		key, value = line.split('=')
 		prop_dict[key] = value.strip()
